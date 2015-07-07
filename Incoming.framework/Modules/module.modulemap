@@ -1,0 +1,10 @@
+framework module Incoming {
+  umbrella header "Incoming.h"
+
+  export *
+  module * { export * }
+}
+
+module Incoming.Swift {
+    header "Incoming-Swift.h"
+}
