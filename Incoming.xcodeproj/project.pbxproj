@@ -28,6 +28,8 @@
 		6F17CC111B2ED5960083F111 /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F17CC101B2ED5960083F111 /* Promise.swift */; };
 		6F17CC121B2ED5960083F111 /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F17CC101B2ED5960083F111 /* Promise.swift */; };
 		6F17CC1A1B2ED6520083F111 /* Incoming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F17CC0E1B2ED5800083F111 /* Incoming.swift */; };
+		6F49DA4A1B9CC8A50049316C /* Future.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F49DA491B9CC8A50049316C /* Future.swift */; };
+		6F49DA5A1B9F57F50049316C /* Future.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F49DA491B9CC8A50049316C /* Future.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,7 @@
 		6F17CC0E1B2ED5800083F111 /* Incoming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Incoming.swift; sourceTree = "<group>"; };
 		6F17CC101B2ED5960083F111 /* Promise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Promise.swift; sourceTree = "<group>"; };
 		6F46AB1B1B4BC7EA00657941 /* Incoming.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Incoming.playground; sourceTree = "<group>"; };
+		6F49DA491B9CC8A50049316C /* Future.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Future.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				6F17CC101B2ED5960083F111 /* Promise.swift */,
+				6F49DA491B9CC8A50049316C /* Future.swift */,
 			);
 			name = Promise;
 			sourceTree = "<group>";
@@ -190,6 +194,7 @@
 		6F17CBE81B2ED5620083F111 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Olivier THIERRY";
 				TargetAttributes = {
@@ -261,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F49DA4A1B9CC8A50049316C /* Future.swift in Sources */,
 				6F17CC0F1B2ED5800083F111 /* Incoming.swift in Sources */,
 				6F17CC111B2ED5960083F111 /* Promise.swift in Sources */,
 			);
@@ -272,6 +278,7 @@
 			files = (
 				6F17CC041B2ED5630083F111 /* IncomingTests.swift in Sources */,
 				6F17CC1A1B2ED6520083F111 /* Incoming.swift in Sources */,
+				6F49DA5A1B9F57F50049316C /* Future.swift in Sources */,
 				6F17CC121B2ED5960083F111 /* Promise.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

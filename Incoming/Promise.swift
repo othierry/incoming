@@ -4,7 +4,7 @@ import Foundation
 protocol Invokable {
   func invoke(with: Any?) -> Any?
   func isTypeError(with: Any?) -> Bool
-  func expectedType() -> Any
+  func expectedType() -> Any.Type
 }
 
 public class Then<A, B> : Invokable {
@@ -36,7 +36,7 @@ public class Then<A, B> : Invokable {
     return !(g != nil || with is A)
   }
   
-  func expectedType() -> Any {
+  func expectedType() -> Any.Type {
     return A.self
   }
 }
@@ -52,14 +52,15 @@ public class Catch : Invokable {
   
   // - Invokable
   func invoke(with: Any?) -> Any? {
-    return f(with as? NSError)
+    f(with as? NSError)
+    return nil
   }
   
   func isTypeError(with: Any?) -> Bool {
     return !(with is NSError)
   }
   
-  func expectedType() -> Any {
+  func expectedType() -> Any.Type {
     return NSError.self
   }
 }
@@ -141,6 +142,7 @@ public class Promise {
   public func resolve(value: Any?) {
     self.value = value
     dispatch_async(dispatch_get_main_queue(), resolveAll)
+//    resolveAll()
   }
 
   public func reject() {
@@ -150,6 +152,7 @@ public class Promise {
   public  func reject(error: NSError?) {
     self.error = error
     dispatch_async(dispatch_get_main_queue(), rejectAll)
+//    rejectAll()
   }
   
   // MARK: - Private
@@ -177,6 +180,7 @@ public class Promise {
       }
       rejectAll()
     } else {
+      println(">>>REJECTED<<<")
       state = .Rejected
     }
   }
@@ -222,7 +226,7 @@ public class Promise {
       } else if f.isTypeError(value) {
         return resolveTypeError(f.expectedType(), resolvedType: value.self)
       } else {
-        let retVal = f.invoke(value)
+        let retVal: Any? = f.invoke(value)
         if let promise = retVal as? Promise {
           handleResolvedPromise(promise)
         } else if retVal is Void {
@@ -232,6 +236,8 @@ public class Promise {
         }
       }
     } else {
+      
+      println(">>>RESOLVED<<<")
       state = .Resolved
     }
   }
