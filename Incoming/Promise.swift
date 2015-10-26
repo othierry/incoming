@@ -180,7 +180,7 @@ public class Promise {
       }
       rejectAll()
     } else {
-      println(">>>REJECTED<<<")
+      print(">>>REJECTED<<<")
       state = .Rejected
     }
   }
@@ -237,7 +237,7 @@ public class Promise {
       }
     } else {
       
-      println(">>>RESOLVED<<<")
+      print(">>>RESOLVED<<<")
       state = .Resolved
     }
   }

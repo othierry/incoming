@@ -1,6 +1,0 @@
-version: "Apple Swift version 1.2 (swiftlang-602.0.53.1 clang-602.0.53)"
-options: "b7c2439eafee968a0e17c62832c0abbd"
-inputs: 
-- "/Users/ol/Code/iOS/Incoming/Incoming/Future.swift"
-- "/Users/ol/Code/iOS/Incoming/Incoming/Incoming.swift"
-- "/Users/ol/Code/iOS/Incoming/Incoming/Promise.swift"
