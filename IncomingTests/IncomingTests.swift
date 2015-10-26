@@ -51,15 +51,15 @@ class IncomingTests: XCTestCase {
       Future<String>.incoming { future in
         future.resolve("olivier")
       }.then { name -> Int in
-        print(name)
+        print(name, terminator: "")
         return 25
       }.then { age -> Future<(Int, String, Bool)> in
-        println(" is \(age) years old")
+        print(" is \(age) years old")
         return Future.incoming { future in
           future.resolve(42, "Olivier", true)
         }
       }.then { a, b, c in
-        println("\(a), \(b), \(c)")
+        print("\(a), \(b), \(c)")
       }
       
 //      let promise = Future<(Int?, Int, [String])>()

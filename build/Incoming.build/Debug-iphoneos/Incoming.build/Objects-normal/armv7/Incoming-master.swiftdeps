@@ -1,6 +1,6 @@
-version: "Apple Swift version 1.2 (swiftlang-602.0.53.1 clang-602.0.53)"
-options: "1592dfb03859d6d3a7b5d507b214306f"
+version: "Apple Swift version 2.0 (swiftlang-700.0.59 clang-700.0.72)"
+options: "0d974feece2ce86f9e172e8f3afd5557"
+build_time: [499190081, 293516000]
 inputs: 
-- "/Users/ol/Code/iOS/Incoming/Incoming/Future.swift"
-- "/Users/ol/Code/iOS/Incoming/Incoming/Incoming.swift"
-- "/Users/ol/Code/iOS/Incoming/Incoming/Promise.swift"
+	"/Users/oli/Code/iOS/Incoming/Incoming/Promise.swift": [499190078, 0]
+	"/Users/oli/Code/iOS/Incoming/Incoming/Incoming.swift": [499190055, 0]

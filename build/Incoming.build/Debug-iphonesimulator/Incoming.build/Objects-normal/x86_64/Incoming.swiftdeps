@@ -1,45 +1,111 @@
 ### Swift dependencies file v0 ###
-provides:
+provides-top-level:
 - "serialQueue"
 - "PromiseConcurrencyType"
 - "incoming"
 - "incoming"
-nominals:
+provides-nominal:
 - "O8Incoming22PromiseConcurrencyType"
-class-members:
-top-level:
-- "DISPATCH_QUEUE_SERIAL"
-- !private "DISPATCH_QUEUE_PRIORITY_DEFAULT"
+provides-member:
+- ["O8Incoming22PromiseConcurrencyType", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "incoming_dispatch"
 - "Void"
-- !private "incoming"
-- "Promise"
-- "StringLiteralType"
+- "serialQueue"
 - "PromiseConcurrencyType"
 - !private "dispatch_queue_t"
 - "=="
 - "dispatch_queue_create"
-- !private "IntegerLiteralType"
-- !private "FloatLiteralType"
+- !private "DISPATCH_QUEUE_PRIORITY_DEFAULT"
+- "DISPATCH_QUEUE_SERIAL"
+- "StringLiteralType"
+- "Promise"
+- "incoming"
 - !private "dispatch_get_global_queue"
-- !private "incoming_dispatch"
-- !private "serialQueue"
-member-access:
-- !private "Si"
-- "O8Incoming22PromiseConcurrencyType"
-- "VSs13UnsafePointer"
-- !private "C8Incoming7Promise"
+depends-member:
+- !private ["PSs9AnyObject", "init"]
+- !private ["PSs22BidirectionalIndexType", "hashValue"]
+- !private ["PSs21BitwiseOperationsType", "hashValue"]
+- !private ["PSs11CVarArgType", "hashValue"]
+- !private ["PSs10Comparable", "hashValue"]
+- !private ["PSs23CustomStringConvertible", "hashValue"]
+- ["PSs9Equatable", "Concurrent"]
+- ["PSs9Equatable", "Serial"]
+- ["PSs9Equatable", "hashValue"]
+- ["PSs9Equatable", ""]
+- !private ["PSs16ForwardIndexType", "hashValue"]
+- ["PSs8Hashable", "Concurrent"]
+- ["PSs8Hashable", "Serial"]
+- ["PSs8Hashable", "hashValue"]
+- ["PSs8Hashable", ""]
+- !private ["SQ", "deinit"]
+- !private ["Si", "hashValue"]
+- !private ["PSs21IntegerArithmeticType", "hashValue"]
+- !private ["PSs25IntegerLiteralConvertible", "hashValue"]
+- !private ["PSs11IntegerType", "hashValue"]
+- !private ["PSs14MirrorPathType", "hashValue"]
+- !private ["C8Incoming7Promise", "init"]
+- ["O8Incoming22PromiseConcurrencyType", "Concurrent"]
+- ["O8Incoming22PromiseConcurrencyType", "Serial"]
+- ["O8Incoming22PromiseConcurrencyType", "deinit"]
+- ["O8Incoming22PromiseConcurrencyType", "hashValue"]
+- !private ["PSs21RandomAccessIndexType", "hashValue"]
+- !private ["PSs17SignedIntegerType", "hashValue"]
+- !private ["PSs16SignedNumberType", "hashValue"]
+- !private ["PSs10Strideable", "hashValue"]
+- ["VSs13UnsafePointer", "deinit"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "hashValue"]
+- !private ["PSs14_Incrementable", "hashValue"]
+- !private ["PSs22_IntegerArithmeticType", "hashValue"]
+- !private ["PSs12_IntegerType", "hashValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "hashValue"]
+- !private ["PSs22_RandomAccessAmbiguity", "hashValue"]
+- !private ["PSs12_Reflectable", "hashValue"]
+- !private ["PSs18_SignedIntegerType", "hashValue"]
+- !private ["PSs11_Strideable", "hashValue"]
+depends-nominal:
+- !private "PSs9AnyObject"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
+- !private "PSs11CVarArgType"
+- !private "PSs10Comparable"
+- !private "PSs23CustomStringConvertible"
 - "PSs9Equatable"
+- !private "PSs16ForwardIndexType"
 - "PSs8Hashable"
-dynamic-lookup:
-cross-module:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Swift.swiftmodule"
-- "/Users/ol/Code/iOS/Incoming/Incoming/Incoming.h"
-- "/Users/ol/Code/iOS/Incoming/build/Incoming.build/Debug-iphonesimulator/Incoming.build/unextended-module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Security.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/CoreImage.swiftmodule"
+- !private "SQ"
+- !private "Si"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
+- !private "PSs14MirrorPathType"
+- !private "C8Incoming7Promise"
+- "O8Incoming22PromiseConcurrencyType"
+- !private "PSs21RandomAccessIndexType"
+- !private "PSs17SignedIntegerType"
+- !private "PSs16SignedNumberType"
+- !private "PSs10Strideable"
+- "VSs13UnsafePointer"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "PSs22_RandomAccessAmbiguity"
+- !private "PSs12_Reflectable"
+- !private "PSs18_SignedIntegerType"
+- !private "PSs11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/oli/Code/iOS/Incoming/Incoming/Incoming.h"
+- "/Users/oli/Code/iOS/Incoming/build/Incoming.build/Debug-iphonesimulator/Incoming.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "c317cef3748bae27822840cc0ac1e0f1"

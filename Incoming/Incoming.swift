@@ -21,14 +21,14 @@ public func incoming() -> Promise {
 }
 
 public func incoming(
-  _ concurrencyType: PromiseConcurrencyType = .Concurrent,
+  concurrencyType: PromiseConcurrencyType = .Concurrent,
   closure: Promise -> Void) -> Promise
 {
   switch concurrencyType {
   case .Concurrent:
-    return incoming_dispatch(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), closure)
+    return incoming_dispatch(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), closure: closure)
   case .Serial:
-    return incoming_dispatch(serialQueue, closure)
+    return incoming_dispatch(serialQueue, closure: closure)
   }
 }
 
