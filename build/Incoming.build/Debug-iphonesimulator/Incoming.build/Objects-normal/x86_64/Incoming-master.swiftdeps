@@ -1,6 +1,0 @@
-version: "Apple Swift version 2.0 (swiftlang-700.0.59 clang-700.0.72)"
-options: "4cf5545e5b366f17b40891de52e8e206"
-build_time: [499190083, 290587000]
-inputs: 
-	"/Users/oli/Code/iOS/Incoming/Incoming/Incoming.swift": [499190055, 0]
-	"/Users/oli/Code/iOS/Incoming/Incoming/Promise.swift": [499190078, 0]
